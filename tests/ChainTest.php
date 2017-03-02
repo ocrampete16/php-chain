@@ -12,4 +12,10 @@ class ChainTest extends TestCase
     {
         $this->assertEquals(1, (new Chain())->execute(1));
     }
+
+    /** @test */
+    public function chain_to_link()
+    {
+        $this->assertEquals(2, (new Chain())->then(new AddOne())->execute(1));
+    }
 }
