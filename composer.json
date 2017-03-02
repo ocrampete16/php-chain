@@ -1,0 +1,17 @@
+{
+    "name": "marcopetersen/php-chain",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marco Petersen",
+            "email": "m@rcopetersen.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "MarcoPetersen\\Chain\\": "src/"
+        }
+    }
+}
