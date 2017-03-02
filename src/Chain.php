@@ -9,9 +9,14 @@ class Chain
      */
     private $firstLink;
 
+    /**
+     * @var Link
+     */
+    private $lastLink;
+
     public function __construct()
     {
-        $this->firstLink = new DummyLink();
+        $this->lastLink = $this->firstLink = new DummyLink();
     }
 
     /**
@@ -21,7 +26,8 @@ class Chain
      */
     public function then($link)
     {
-        $this->firstLink->then($link);
+        $this->lastLink->then($link);
+        $this->lastLink = $this->lastLink->getSuccessor();
 
         return $this;
     }

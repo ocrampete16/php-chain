@@ -24,4 +24,10 @@ class ChainTest extends TestCase
     {
         $this->assertEquals(2, (new Chain())->then(AddOne::class)->execute(1));
     }
+
+    /** @test */
+    public function allow_for_multiple_links()
+    {
+        $this->assertEquals(3, (new Chain())->then(AddOne::class)->then(AddOne::class)->execute(1));
+    }
 }

@@ -5,7 +5,7 @@ namespace MarcoPetersen\Chain;
 abstract class Link
 {
     /**
-     * @var Link
+     * @var Link|null
      */
     private $successor;
 
@@ -23,6 +23,14 @@ abstract class Link
         $this->successor = $successor;
 
         return $this;
+    }
+
+    /**
+     * @return Link|null
+     */
+    public function getSuccessor()
+    {
+        return $this->successor;
     }
 
     /**
