@@ -18,4 +18,10 @@ class ChainTest extends TestCase
     {
         $this->assertEquals(2, (new Chain())->then(new AddOne())->execute(1));
     }
+
+    /** @test */
+    public function chain_with_fqcn()
+    {
+        $this->assertEquals(2, (new Chain())->then(AddOne::class)->execute(1));
+    }
 }

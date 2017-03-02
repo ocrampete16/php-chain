@@ -15,11 +15,11 @@ class Chain
     }
 
     /**
-     * @param Link $link
+     * @param Link|string $link
      *
      * @return $this
      */
-    public function then(Link $link)
+    public function then($link)
     {
         $this->firstLink->then($link);
 
