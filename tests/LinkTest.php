@@ -1,18 +1,8 @@
 <?php
 
-use MarcoPetersen\Chain\Link;
-use PHPUnit\Framework\TestCase;
+require_once 'AddOne.php';
 
-/**
- * A simple link for testing purposes.
- */
-class AddOne extends Link
-{
-    public function execute($number)
-    {
-        return $this->next($number + 1);
-    }
-}
+use PHPUnit\Framework\TestCase;
 
 class LinkTest extends TestCase
 {
