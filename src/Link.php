@@ -10,12 +10,16 @@ abstract class Link
     private $successor;
 
     /**
-     * @param Link $successor
+     * @param Link|string $successor
      *
      * @return $this
      */
-    public function then(Link $successor)
+    public function then($successor)
     {
+        if (is_string($successor)) {
+            $successor = new $successor();
+        }
+
         $this->successor = $successor;
 
         return $this;

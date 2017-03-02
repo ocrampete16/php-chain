@@ -27,4 +27,10 @@ class LinkTest extends TestCase
     {
         $this->assertEquals(3, (new AddOne())->then(new AddOne())->execute(1));
     }
+
+    /** @test */
+    public function chain_with_a_fqcn()
+    {
+        $this->assertEquals(3, (new AddOne())->then(AddOne::class)->execute(1));
+    }
 }
