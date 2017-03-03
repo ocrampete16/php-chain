@@ -1,4 +1,5 @@
 # PHP Chain
+[![Build Status](https://travis-ci.org/ocrampete16/php-chain.svg?branch=master)](https://travis-ci.org/ocrampete16/php-chain)
 An implementation of the _chain-of-responsibility pattern_ in PHP.
 
 ## Installation
