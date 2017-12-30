@@ -1,6 +1,7 @@
 # PHP Chain
 [![Build Status](https://travis-ci.org/ocrampete16/php-chain.svg?branch=master)](https://travis-ci.org/ocrampete16/php-chain)
 [![StyleCI](https://styleci.io/repos/83728346/shield?branch=master)](https://styleci.io/repos/83728346)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5b1aa7f182ab817af568/maintainability)](https://codeclimate.com/github/ocrampete16/php-chain/maintainability)
 
 An implementation of the _chain-of-responsibility pattern_ in PHP.
 
